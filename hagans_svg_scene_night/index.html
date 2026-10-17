@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcus Hagans — Night Mountain SVG</title>
+  <!-- Link to CSS (WHAT IT IS). 
+       Connects the HTML to the CSS (WHAT IT DOES). 
+       It keeps the design separate from the HTML (WHAT IT MEANS). -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #f0f0f0; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; padding: 50px;">
+
+  <h1>Night Mountains</h1>
+
+  <!-- SVG Scene (WHAT IT IS). 
+       Draws a night scene with mountains (WHAT IT DOES). 
+       It uses a coordinate system to place shapes (WHAT IT MEANS). -->
+  <svg viewBox="0 0 400 300" width="400" height="300"
+       role="img" aria-labelledby="scene-title"
+       xmlns="http://www.w3.org/2000/svg">
+    <title id="scene-title">A simple night scene with a crescent moon and mountains</title>
+
+    <!-- Sky (WHAT IT IS). 
+         Fills the background with dark blue (WHAT IT DOES). 
+         It sets the time of day (WHAT IT MEANS). -->
+    <rect x="0" y="0" width="400" height="300" fill="#000033" />
+
+    <!-- Moon (WHAT IT IS). 
+         Uses a circle and ellipse to make a crescent (WHAT IT DOES). 
+         It adds a light source to the night sky (WHAT IT MEANS). -->
+    <circle cx="300" cy="60" r="30" fill="#ffffcc" />
+    <ellipse cx="310" cy="60" rx="25" ry="30" fill="#000033" />
+
+    <!-- Mountains (WHAT IT IS). 
+         A group of polygons for the peaks (WHAT IT DOES). 
+         It uses a shared stroke for all mountains (WHAT IT MEANS). -->
+    <g stroke="#ffffff" stroke-width="2">
+      <polygon points="0,300 150,100 300,300" fill="#1a1a4a" />
+      <polygon points="100,300 250,150 400,300" fill="#0a0a2a" />
+    </g>
+
+    <!-- Ground (WHAT IT IS). 
+         A rectangle for the floor (WHAT IT DOES). 
+         It gives the scene a base (WHAT IT MEANS). -->
+    <rect x="0" y="280" width="400" height="20" fill="#000000" />
+
+    <!-- Star (WHAT IT IS). 
+         A simple line to represent a star (WHAT IT DOES). 
+         It adds detail to the sky (WHAT IT MEANS). -->
+    <line x1="50" y1="50" x2="55" y2="55" stroke="#ffffff" stroke-width="2" />
+    <line x1="55" y1="50" x2="50" y2="55" stroke="#ffffff" stroke-width="2" />
+
+    <!-- Label (WHAT IT IS). 
+         Text placed at the bottom (WHAT IT DOES). 
+         It identifies the scene (WHAT IT MEANS). -->
+    <text x="200" y="270" text-anchor="middle"
+          font-family="Arial, sans-serif"
+          font-size="16" font-weight="bold" fill="#ffffff">
+      MIDNIGHT PEAKS
+    </text>
+  </svg>
+
+  <!-- Description (WHAT IT IS). 
+       Describes the scene and shapes (WHAT IT DOES). 
+       Shows what shapes that I used for the requirements (WHAT IT MEANS). -->
+  <p>I drew the nighttime mountain scene. I used a rect for the sky and ground, a circle and ellipse to make a crescent moon, polygons for the mountains, and a line to make a small star. I grouped the mountains together to give them all a white outline.</p>
+
+  <!-- Reflection (WHAT IT IS). 
+       Answers the required reflection questions (WHAT IT DOES). 
+       It documents my learning process (WHAT IT MEANS). -->
+  <p><strong>Reflection:</strong> The hardest shape to position was the ellipse because I had to overlap it perfectly with the circle to make the moon look like a crescent. At first, I tried making the mountains bright purple, but they looked too fake against the dark sky, so I switched to navy blue. I have seen this kind of SVG work on weather websites where a moon or sun changes shape based on the time of day.</p>
+
+</body>
+</html>
